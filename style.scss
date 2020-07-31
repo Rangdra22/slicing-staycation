@@ -1,0 +1,389 @@
+$primary: #2446dd;
+$title: #152c5b;
+$sub-title: #b0b0b0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 500;
+  color: $title;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin: auto;
+  width: 85%;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  height: 70px;
+  margin-bottom: 70px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+
+    .logo {
+      font-weight: 500;
+      font-size: 26px;
+      color: $primary;
+      margin-top: 10px;
+      span {
+        font-weight: 500;
+        font-size: 26px;
+        color: $title;
+      }
+    }
+
+    .nav-list {
+      width: 30%;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 16px;
+            color: $title;
+          }
+        }
+        .active {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  .jumbotron-banner {
+    width: 60%;
+
+    .title {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 63px;
+      color: $title;
+      margin-bottom: 20px;
+    }
+
+    .sub-title {
+      font-weight: 300;
+      font-size: 16px;
+      color: $sub-title;
+      margin-bottom: 30px;
+    }
+    button {
+      width: 210px;
+      height: 50px;
+      padding: 10px 28px;
+      background-color: $primary;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 5px 6px 20px #888888;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: #182e91;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+    .data {
+      margin-top: 100px;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .travelers {
+        span {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        img {
+          position: absolute;
+          bottom: 30px;
+        }
+      }
+
+      .treasures {
+        span {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        img {
+          position: absolute;
+          bottom: 30px;
+        }
+      }
+
+      .cities {
+        span {
+          font-weight: 600;
+          font-size: 16px;
+        }
+        img {
+          position: absolute;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+.most-picked {
+  margin-top: 70px;
+
+  .content {
+    display: flex;
+
+    .title {
+      font-size: 20px;
+      color: #ffffff;
+    }
+    .sub-title {
+      font-weight: 200;
+      font-size: 15px;
+      color: #ffffff;
+      margin-top: 3px;
+    }
+
+    .img-utama {
+      width: 35%;
+      height: 460px;
+      background-image: url(/images/most-picked1.png);
+      background-repeat: no-repeat;
+      padding-top: 380px;
+      padding-left: 20px;
+    }
+
+    .img-option {
+      width: 65%;
+
+      .img-atas {
+        display: flex;
+        margin-bottom: 30px;
+
+        .img-1 {
+          width: 50%;
+          height: 215px;
+          background-image: url(/images/most-picked2.png);
+          background-repeat: no-repeat;
+          margin-right: 10px;
+          padding-top: 140px;
+          padding-left: 20px;
+        }
+        .img-2 {
+          width: 50%;
+          height: 215px;
+          background-image: url(/images/most-picked3.png);
+          background-repeat: no-repeat;
+          padding-top: 140px;
+          padding-left: 20px;
+        }
+      }
+
+      .img-bawah {
+        display: flex;
+
+        .img-3 {
+          width: 50%;
+          height: 215px;
+          background-image: url(/images/most-picked4.png);
+          background-repeat: no-repeat;
+          margin-right: 10px;
+          padding-top: 140px;
+          padding-left: 20px;
+        }
+        .img-4 {
+          width: 50%;
+          height: 215px;
+          background-image: url(/images/most-picked5.png);
+          background-repeat: no-repeat;
+          padding-top: 140px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.category {
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 20px;
+      color: $title;
+    }
+
+    .sub-title {
+      font-weight: 300;
+      font-size: 15px;
+      color: $sub-title;
+    }
+  }
+  .backyard {
+    margin-top: 70px;
+  }
+  .living-room {
+    margin-top: 70px;
+  }
+  .kitchen {
+    margin-top: 70px;
+  }
+}
+
+.review {
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 100px;
+
+  .review-image {
+    width: 40%;
+  }
+  .review-customer {
+    width: 60%;
+    padding-top: 70px;
+
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      color: $title;
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-bottom: 18px;
+    }
+
+    .description {
+      font-size: 32px;
+      color: $title;
+    }
+    .sub-title {
+      font-weight: 300;
+      font-size: 18px;
+      color: $sub-title;
+      margin-bottom: 40px;
+    }
+
+    button {
+      width: 210px;
+      height: 50px;
+      padding: 10px 28px;
+      background-color: $primary;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 5px 6px 20px #888888;
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: #182e91;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid $sub-title;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .title {
+      font-weight: 500;
+      font-size: 18px;
+      color: #152c5b;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px;
+        color: $sub-title;
+      }
+    }
+    .logo {
+      .title {
+        font-weight: 500;
+        font-size: 26px;
+        color: $primary;
+        span {
+          font-weight: 500;
+          font-size: 26px;
+          color: $title;
+        }
+      }
+
+      .sub-title {
+        font-weight: 300;
+        font-size: 16px;
+        color: $sub-title;
+      }
+    }
+
+    .beginners {
+      .title {
+        padding-left: 40px;
+      }
+    }
+    .about {
+      .title {
+        padding-left: 40px;
+      }
+    }
+    .getting {
+      .title {
+        padding-left: 40px;
+      }
+    }
+  }
+  .text-footer {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: $sub-title;
+  }
+}
