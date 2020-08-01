@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StayCation</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav data-aos="fade-down" data-aos-duration="500">
       <header class="container">
         <div class="logo">Stay<span>cation.</span></div>
         <div class="nav-list">
@@ -21,14 +22,18 @@
       </header>
     </nav>
     <section class="container jumbotron">
-      <div class="jumbotron-banner">
+      <div
+        class="jumbotron-banner"
+        data-aos="fade-up-right"
+        data-aos-duration="500"
+      >
         <div class="title">Forget Busy Work, <br />Start Next Vacation</div>
         <div class="sub-title">
           We provide what you need to enjoy your <br />
           holiday with family.Time to make another <br />
           memorable moments.
         </div>
-        <button><a href="#">Show Me</a></button>
+        <button><a href="#show">Show Me</a></button>
         <div class="data">
           <div class="travelers">
             <img src="images/ic_traveler.png" alt="" />
@@ -43,32 +48,38 @@
           </div>
         </div>
       </div>
-      <div class="jumbotron-image"><img src="images/banner.png" alt="" /></div>
+      <div
+        class="jumbotron-image"
+        data-aos="fade-up-left"
+        data-aos-duration="500"
+      >
+        <img src="images/banner.png" alt="" />
+      </div>
     </section>
-    <div class="container most-picked">
-      <h2>Most Picked</h2>
-      <div class="content">
+    <div class="container most-picked" id="show">
+      <h2 data-aos="fade-up" data-aos-delay="100">Most Picked</h2>
+      <div class="content" data-aos="fade-up" data-aos-delay="200">
         <div class="img-utama">
           <div class="title">Village Cidadas</div>
           <div class="sub-title">Jakarta Indonesia</div>
         </div>
         <div class="img-option">
           <div class="img-atas">
-            <div class="img-1">
+            <div class="img-1" data-aos="fade-up" data-aos-delay="300">
               <div class="title">Trans Luxury Hotel</div>
               <div class="sub-title">Bandung Indonesia</div>
             </div>
-            <div class="img-2">
+            <div class="img-2" data-aos="fade-up" data-aos-delay="400">
               <div class="title">Padma Hotel</div>
               <div class="sub-title">Bandung Indonesia</div>
             </div>
           </div>
           <div class="img-bawah">
-            <div class="img-3">
+            <div class="img-3" data-aos="fade-up" data-aos-delay="500">
               <div class="title">Papandayan Hotel</div>
               <div class="sub-title">Garut Indonesia</div>
             </div>
-            <div class="img-4">
+            <div class="img-4" data-aos="fade-up" data-aos-delay="600">
               <div class="title">Village Lembang</div>
               <div class="sub-title">Ciwidey Indonesia</div>
             </div>
@@ -78,24 +89,26 @@
     </div>
     <div class="container category">
       <div class="backyard">
-        <h2>House With Beauty Backyard</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100">
+          House With Beauty Backyard
+        </h2>
         <div class="content">
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="200">
             <img src="images/backyard-1.png" alt="" />
             <div class="title">Tabby Town</div>
             <div class="sub-title">Bandung, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="300">
             <img src="images/backyard-2.png" alt="" />
             <div class="title">Anggana</div>
             <div class="sub-title">Bogor, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="400">
             <img src="images/backyard-3.png" alt="" />
             <div class="title">Seattle Rain</div>
             <div class="sub-title">Jakarta, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="500">
             <img src="images/backyard-4.png" alt="" />
             <div class="title">Wodden Fit</div>
             <div class="sub-title">Wonosobo, Indonesia</div>
@@ -103,24 +116,26 @@
         </div>
       </div>
       <div class="living-room">
-        <h2>Hotels with large living room</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100">
+          Hotels with large living room
+        </h2>
         <div class="content">
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="200">
             <img src="images/living-1.png" alt="" />
             <div class="title">Green Park</div>
             <div class="sub-title">Tangerang, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="300">
             <img src="images/living-2.png" alt="" />
             <div class="title">Podo Wae</div>
             <div class="sub-title">Madiun, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="400">
             <img src="images/living-3.png" alt="" />
             <div class="title">Silver Rain</div>
             <div class="sub-title">Bandung, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="500">
             <img src="images/living-4.png" alt="" />
             <div class="title">Cashville</div>
             <div class="sub-title">Kemang, Indonesia</div>
@@ -128,24 +143,26 @@
         </div>
       </div>
       <div class="kitchen">
-        <h2>Apartements with kitchen set</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100">
+          Apartements with kitchen set
+        </h2>
         <div class="content">
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="200">
             <img src="images/kitchen-1.png" alt="" />
             <div class="title">PS Wood</div>
             <div class="sub-title">Depok, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="300">
             <img src="images/kitchen-2.png" alt="" />
             <div class="title">One Five</div>
             <div class="sub-title">Jakarta, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="400">
             <img src="images/kitchen-3.png" alt="" />
             <div class="title">Minimal</div>
             <div class="sub-title">Jakarta, Indonesia</div>
           </div>
-          <div class="facility">
+          <div class="facility" data-aos="fade-up" data-aos-delay="500">
             <img src="images/kitchen-4.png" alt="" />
             <div class="title">StayHome</div>
             <div class="sub-title">Wonosobo, Indonesia</div>
@@ -154,7 +171,11 @@
       </div>
     </div>
 
-    <div class="container review">
+    <div
+      class="container review"
+      data-aos="zoom-in-down"
+      data-aos-duration="2000"
+    >
       <div class="review-image">
         <img src="images/banner-review.png" alt="" />
       </div>
@@ -166,7 +187,7 @@
           i should try again next time soon ....
         </div>
         <div class="sub-title">Rangdra Pangestu, Web Developer</div>
-        <button><a href="#">Reid Their Story</a></button>
+        <button><a href="#">Read Their Story</a></button>
       </div>
     </div>
 
@@ -208,5 +229,10 @@
         Copyright 2020-All rights reserved-StayCation
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
